@@ -21,11 +21,11 @@
     justify-content: center;
 
   }
-  .main-data{
+  /* .main-data{
     display: flex;
     justify-content: center;
     flex-wrap: wrap-reverse;
-  }
+  } */
   .card-data{
 
   }

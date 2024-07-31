@@ -1,0 +1,90 @@
+import { useState } from "react";
+import { Modal, Dropdown, Form, Button, ButtonGroup } from "react-bootstrap";
+import { useForm, SubmitHandler } from "react-hook-form";
+
+function modal() {
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (data) => {
+    console.log(data);
+  };
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  return (
+    <>
+      <Button variant="primary" onClick={handleShow}>
+        Show Modal
+      </Button>
+
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Add Assignment</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Form onSubmit={handleSubmit(onSubmit)}>
+            <div style={{ padding: "20px" }}>
+              {/* <Button variant="success">Select</Button> */}
+              <span>
+                <select
+                  className="form-select "
+                  style={{ display: "inline-block", width: 350 }}
+                >
+                  <option value="course1">HTML</option>
+                  <option value="course2">CSS</option>
+                  <option value="course3">JS</option>
+                </select>
+              </span>
+            </div>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>Title</Form.Label>
+              <Form.Control
+                id="title"
+                {...register("title", {
+                  required: "title is required",
+                })}
+                type="text"
+                placeholder="add title..."
+                autoFocus
+              />
+              {errors.title && <p>{errors.title.message}</p>}
+            </Form.Group>
+            <Form.Group
+              className="mb-3"
+              controlId="exampleForm.ControlTextarea1"
+            >
+              <Form.Label>Description</Form.Label>
+              <Form.Control 
+               id="description"
+                {...register("description", {
+                  required: "description is required",
+                })}
+               as="textarea" rows={3} />
+               {errors.description && <p>{errors.description.message}</p>}
+            </Form.Group>
+            <Form.Group controlId="formFileSm" className="mb-3">
+              <Form.Label>Choose File</Form.Label>
+              <Form.Control type="file" size="md" />
+            </Form.Group>
+          </Form>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </>
+  );
+}
+
+export default modal;
