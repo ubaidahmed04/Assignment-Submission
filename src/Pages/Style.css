@@ -21,4 +21,12 @@
     justify-content: center;
 
   }
+  .main-data{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  }
+  .card-data{
+
+  }
   

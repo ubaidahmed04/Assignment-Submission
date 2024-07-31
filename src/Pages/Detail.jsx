@@ -14,7 +14,7 @@ import Cardassign from "../components/cardassign";
     
     <div className="d-flex justify-content-evenly my-5 align-items-center ">
         <div>
-        <h2>Add Asignment</h2>
+        <h1>Add Asignment</h1>
         </div>
         <div className="">
         <MyModal/>
@@ -22,9 +22,9 @@ import Cardassign from "../components/cardassign";
         </div>
 
     </div>
-    <div className=" d-flex flex-wrap-reverse justify-content-center lg:justify-content-between my-4 p-4 col flex-col gap-4">
+    <div className="main-data ">
         
-        <div className=" d-block m-5  px-4 justify-content-between">
+        <div className=" m-5  px-4 justify-content-between">
         <span><SlideUpComponent/></span>
         <span ><SlideUpComponent/></span>
         <span><SlideUpComponent/></span>

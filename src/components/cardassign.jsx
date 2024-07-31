@@ -3,7 +3,7 @@ import { Card } from 'react-bootstrap'
 
 function cardassign() {
   return (
-    <Card style={{ width: '18rem',marginTop:'50px' }}>
+    <Card style={{ width: '15rem',marginTop:'50px' }}>
     <Card.Body>
       <Card.Title>Total Students  :  300</Card.Title> 
       <Card.Title className="mb-2 text-muted">Assignment Submit</Card.Title>

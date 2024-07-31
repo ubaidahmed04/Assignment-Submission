@@ -20,6 +20,7 @@
     padding: 10px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     
   }
   
@@ -53,7 +54,7 @@
   @media screen and (max-width: 500px) {
     .slide-btn{
         display: flex;
-        width: 300px;
+        width: 250px;
       }
   }
   
