@@ -6,9 +6,8 @@
   }
   
 .content {
-    width: 500px !important;
     height: auto;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
     background: "#f4f5f6";
     box-shadow: 4px 7px 24px -3px rgba(0,0,0,0.1),10px 0px 15px 4px rgba(0,0,0,0.1);
@@ -19,14 +18,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-  }
-  /* .main-data{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap-reverse;
-  } */
-  .card-data{
 
   }
   

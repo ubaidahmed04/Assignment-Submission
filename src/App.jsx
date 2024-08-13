@@ -4,14 +4,17 @@ import Home from './Pages/Home'
 import SignIn from './Pages/SignIn'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Detail from './Pages/Detail';
+import Layout from './Pages/Layout';
 function App() {
 
   return (
   <>
-      <Routes>
+      <Routes >
+        <Route path='/' element={<Layout/>}>
         <Route path="/" element={<SignIn />} />
         <Route path="/home" element={<Home />} />
         <Route path="/batch" element={<Detail />} />
+        </Route>
       </Routes>
       {/* <Home/> */}
   </>

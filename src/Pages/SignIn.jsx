@@ -3,7 +3,7 @@ import { Form, Button } from "react-bootstrap";
 import './Style.css'
 import { Link,useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
-
+import SMITLogo from '../assets/smit.png'
 function SignIn() {
   const navigator = useNavigate()
   const {
@@ -19,11 +19,11 @@ function SignIn() {
     
   }
   return (
-    <div className="signin-container" >
-        <div className="content">
-
+    <div className="signin-container flex-col gap-3" >
+      <img src={SMITLogo}/>
+      <span className="text-gray-600">Teacher Portal</span>
+        <div className="content min-w-[300px] sm:w-[500px]  gap-3">
       <Form onSubmit={handleSubmit(onSubmit)}>
-        <h2 className="text-center text-gray-600 fw-bold text-2xl">SIGN IN</h2>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label className="font-mono">Email address</Form.Label>
           <Form.Control 
@@ -57,8 +57,8 @@ function SignIn() {
         </Form.Group>
         <div className="">
             <div>
-        <Button className="text-center" variant="primary" type="submit">
-          SignIn
+        <Button className="nunito flex justify-center items-center gap-4 w-full select-none rounded-lg h-10 bg-custom-blue py-1 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 " variant="primary" type="submit">
+          Sign In
         </Button>
                 
             </div>

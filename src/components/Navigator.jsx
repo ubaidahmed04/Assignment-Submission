@@ -1,36 +1,43 @@
-import React from 'react'
-import {NavDropdown,Navbar,Nav, Container } from 'react-bootstrap';
-import Logo from '../assets/logo.jpg'
+import React from 'react';
+import { Navbar, Nav, Container } from 'react-bootstrap';
+import Logo from '../assets/logo.jpg';
+import avatarUrl from '../assets/avatar2.png';
+
 function Navigator() {
   return (
-    <>
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="bg-white shadow-md fixed top-0 w-full z-[9999]">
       <Container>
-
-        <Navbar.Brand href="#home"><img src={Logo}  className='' style={{width:50,borderRadius:9}} alt="" /></Navbar.Brand>
+        <Navbar.Brand href="#home">
+          <div className="mr-4 cursor-pointer py-1.5 lg:ml-2 agustina text-custom-green capitalize">
+            <span className="text-custom-blue me-2">epic</span>coders
+          </div>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
+          <Nav className="ms-auto flex items-center">
+            <div className="flex items-center mr-4">
+              <img
+                src={avatarUrl}
+                alt="profile's Avatar"
+                className="w-10 h-10 rounded-full object-cover"
+              />
+              <span className="text-lg font-mono text-black ml-2">Ubaid</span>
+            </div>
+            <button className="Btn flex flex-row items-center group bg-red-400 p-2 rounded-lg">
+              <div className="w-6">
+                <svg viewBox="0 0 512 512" className="fill-current text-black">
+                  <path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32z"></path>
+                </svg>
+              </div>
+              <div className="text-black text-lg font-semibold opacity-1 hover:opacity-100 ml-2 transition-opacity duration-200">
+                Logout
+              </div>
+            </button>
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
-
-    </>
-  )
+  );
 }
 
-export default Navigator
+export default Navigator;
