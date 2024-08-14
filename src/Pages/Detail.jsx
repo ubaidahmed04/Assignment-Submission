@@ -5,13 +5,14 @@ import MyModal from "../components/modal";
 import SlideUpComponent from "../components/Slide";
 import Cardui from "../components/cardui";
 import Cardassign from "../components/cardassign";
+import HomeNavbar from "../components/HomeNavbar";
 
 function Detail() {
   return (
-    <div>
-      <Navigator />
+    <div className="">
 
-      <div className="d-flex justify-content-evenly my-5 align-items-center ">
+        <HomeNavbar/>
+      <div className="flex justify-evenly  my-5 align-items-center ">
         <div>
           <h1>Add Asignment</h1>
         </div>

@@ -42,7 +42,7 @@ function ModalForm() {
         Show Modal
       </Button>
 
-      <Modal show={show} onHide={handleClose}>
+      <Modal className="my-40" show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Add Assignment</Modal.Title>
         </Modal.Header>

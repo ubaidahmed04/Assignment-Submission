@@ -1,6 +1,4 @@
-.main-card {
-  padding: 30px 10px 10px 50px;
-}
+
 
 .card-content {
   box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.1), 0px 10px 15px -3px rgba(0,0,0,0.1);
@@ -26,7 +24,7 @@
 }
 
 .slide-up-content.open {
-  max-height: 1000px; /* Adjust as needed to fit the content */
+  max-height: 1000px; 
   transition: max-height 0.5s ease-in;
 }
 
