@@ -37,7 +37,7 @@ const Stream = () => {
                 </div>
                 <div className='w-full px-2 md:px-5'>
 
-                    <Card className='bg-gray-500 shadow-md '>
+                    <Card className='bg-[#B2B7C2] shadow-md '>
                         <Card.Header>Featured</Card.Header>
                         <Card.Body>
                             <span className='flex gap-5 item-center'>
