@@ -39,10 +39,10 @@ const Stream = () => {
                             </Card.Body>
                         </Card> */}
 
-                    </div>
-                    <div className='w-full px-2 py-4 md:px-5'>
-                    <AssignmentCard imagePath={avatar} text={"Announce something to your class"} icon={<LuArrowRightLeft size={30}/>}/>
-                        {/* <Card className='bg-gray-100 my-4 text-gray-900 shadow-md '>
+                </div>
+                <div className='w-full px-2 md:px-5'>
+
+                    <Card className='bg-[#B2B7C2] shadow-md '>
                         <Card.Header>Featured</Card.Header>
                         <Card.Body>
                             <span className='flex gap-5 item-center'>
@@ -57,7 +57,7 @@ const Stream = () => {
                             <Button className='text-custom-blue bg-slate-300'>Add Assignment</Button>
                             </Link>
                         </Card.Body>
-                    </Card> */}
+                    </Card> 
                        
                     </div>
                    

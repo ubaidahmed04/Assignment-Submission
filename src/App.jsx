@@ -6,6 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Detail from './Pages/Detail';
 import Stream from './Pages/Stream';
 import Layout from './Pages/Layout';
+import Classwork from './Pages/Classwork';
+import InvitePeople from './Pages/InvitePeople';
 function App() {
 
   return (
@@ -16,6 +18,8 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/batch" element={<Detail />} />
         <Route path="/stream" element={<Stream />} />
+        <Route path="/classwork" element={<Classwork />} />
+        <Route path="/invitepeople" element={<InvitePeople />} />
         </Route>
       </Routes>
       {/* <Home/> */}
