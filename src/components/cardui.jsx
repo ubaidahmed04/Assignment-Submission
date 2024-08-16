@@ -7,7 +7,7 @@ import { FaRegFolder } from "react-icons/fa6";
 import { FaArrowTrendUp } from "react-icons/fa6";
 function CardUI() {
   return (
-    <div className="mt-3 ml-5">
+    <div className="mt-3 px-2">
       <Card className="shadow-md max-w-sm ">
         <Card.Img variant="top" className='h-1/2' src={bgImg} />
         <Card.Body>

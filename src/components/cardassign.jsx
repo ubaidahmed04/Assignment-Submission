@@ -3,7 +3,7 @@ import { Card } from 'react-bootstrap'
 
 function cardassign() {
   return (
-    <Card>
+    <Card className=''>
     <Card.Body>
       <Card.Title>Total Students  :  300</Card.Title> 
       <Card.Title className="mb-2 text-muted">Assignment Submit</Card.Title>
