@@ -40,24 +40,9 @@ const Stream = () => {
                         </Card> */}
 
                 </div>
-                <div className='w-full px-2 md:px-5'>
+                <div className='w-full px-2 py-4 md:px-5'>
 
-                    <Card className='bg-[#B2B7C2] shadow-md '>
-                        <Card.Header>Featured</Card.Header>
-                        <Card.Body>
-                            <span className='flex gap-5 item-center'>
-
-                                <Card.Title><img src={avatar} className='w-20' /></Card.Title>
-                                <Card.Title>Special title treatment</Card.Title>
-                            </span>
-                            <Card.Text>
-                                With supporting text below as a natural lead-in to additional content.
-                            </Card.Text>
-                            <Link to={'/batch'}>
-                            <Button className='text-custom-blue bg-slate-300'>Add Assignment</Button>
-                            </Link>
-                        </Card.Body>
-                    </Card> 
+                <AssignmentCard  imagePath={avatar} text={"Announce something to you class"} icon={<LuArrowRightLeft size={30}/>}/>
                        
                     </div>
                    
