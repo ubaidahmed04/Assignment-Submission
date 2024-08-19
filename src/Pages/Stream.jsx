@@ -1,5 +1,6 @@
 import React from 'react'
-import bannerImg from '../assets/card-bg.jpg'
+import bgImg2 from '../assets/bgImg.webp';
+
 import avatar from '../assets/avatar2.png'
 import assignment from '../assets/assignment.png'
 import HomeNavbar from '../components/HomeNavbar'
@@ -15,32 +16,25 @@ const Stream = () => {
             <HomeNavbar />
             <div className='lg:px-14'>
                 <div className="relative w-full h-64 p-2 mt-4 ">
-                    <img src={bannerImg} alt="Background" className="opacity-.5 w-full h-full rounded-3xl object-fill" />
+                    <img src={bgImg2} alt="Background" className="opacity-0.8 w-full h-full rounded-3xl object-cover" />
                     <div className="absolute inset-0 p-4 flex flex-col items-start justify-end">
-                        <h1 className="text-gray-100 text-4xl font-bold">Coder Classroom</h1>
-                        <h1 className="text-gray-100 text-2xl font-bold">Batch-09</h1>
+                        <h1 className="text-black text-4xl font-bold">Coder Classroom</h1>
+                        <h1 className="text-black text-2xl font-bold">Batch-09</h1>
                     </div>
                 </div>
 
                 <div className='flex justify-center py-2 '>
                     <div className='px-2  w-1/2 hidden md:block my-4'>
-                        <Card border="primary" className='shadow-md mb-4'>
+                        <Card className='shadow-md mb-4'>
                             <Card.Header className='text-xl font-bold flex justify-between'> <span>Code </span><span><BsThreeDotsVertical/></span></Card.Header>
                             <Card.Body>
-                                <Card.Title className='text-md font-semibold'> Card Title </Card.Title>
-                                <Button className='text-md font-bold justify-end text-custom-blue bg-slate-300'>View all</Button>
+                                <Card.Title className='text-md font-semibold text-center'> 2fCRed# </Card.Title>
                             </Card.Body>
                         </Card>
-                        {/* <Card border="primary" className='shadow-md'>
-                            <Card.Header className='text-xl font-bold'> Upcoming</Card.Header>
-                            <Card.Body>
-                                <Card.Title className='text-md font-semibold'> Card Title </Card.Title>
-                                <Button className='text-md font-bold justify-end text-custom-blue bg-slate-300'>View all</Button>
-                            </Card.Body>
-                        </Card> */}
+                   
 
                 </div>
-                <div className='w-full px-2 py-4 md:px-5'>
+                <div className='w-full px-2 py-4 md:px-5 '>
 
                 <AssignmentCard  imagePath={avatar} text={"Announce something to you class"} icon={<LuArrowRightLeft size={30}/>}/>
                        

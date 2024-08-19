@@ -3,22 +3,28 @@ import Cardui from '../components/cardui'
 import './Style.css'
 function Home() {
   return (
-    <>
-    <div className='  flex flex-wrap justify-center gap-3 items-center overflow-y-auto mt-[70px]'>
-   <Cardui/>
-   <Cardui/>
-   <Cardui/>
-   <Cardui/>
-   <Cardui/>
-   <Cardui/>
-   <Cardui/>
-   <Cardui/>
-   <Cardui/>
-   <Cardui/>
-   <Cardui/>
+    <React.Fragment>
+      <div className=' mt-[80px] items-center justify-center'>
+        <div className='px-[80px] py-[70px] sm:px-[200px] md:px-[240px]'>
+          <p>
+            Hi! Ubaid Ahmed 👋 <br />
+            Welcome to the SMIT Assignment Teacher portal. You can Add your Classroom listed below
+          </p>
+        </div>
+        <div className='  flex flex-wrap  justify-center gap-3 items-center overflow-y-auto '>
 
-    </div>
-    </>
+          <Cardui />
+          <Cardui />
+          <Cardui />
+
+
+        </div>
+      </div>
+      <span className='pt-[300px] '>
+
+      </span>
+
+    </React.Fragment>
   )
 }
 

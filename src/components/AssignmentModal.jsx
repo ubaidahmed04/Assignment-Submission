@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Modal, Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import { FiPlus } from "react-icons/fi";
 
 function ModalForm() {
   const {
@@ -38,11 +39,11 @@ function ModalForm() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Show Modal
+      <Button variant="primary" className='flex items-center gap-2 rounded-xl  p-3' onClick={(handleShow)}>
+      <FiPlus /> Create
       </Button>
 
-      <Modal className="my-40" show={show} onHide={handleClose}>
+      <Modal className="my-24" show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Add Assignment</Modal.Title>
         </Modal.Header>
@@ -70,6 +71,19 @@ function ModalForm() {
                 })}
                 type="text"
                 placeholder="Add title..."
+                autoFocus
+              />
+              {errors.title && <p className="text-danger  pt-1  ">{errors.title.message}</p>}
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>Time Duration</Form.Label>
+              <Form.Control
+                // id="title"
+                {...register("time", {
+                  required: "Time is required",
+                })}
+                type="date"
+                placeholder="Add Time..."
                 autoFocus
               />
               {errors.title && <p className="text-danger  pt-1  ">{errors.title.message}</p>}

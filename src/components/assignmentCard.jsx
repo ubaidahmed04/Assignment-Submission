@@ -5,7 +5,7 @@ import avatar from '../assets/avatar2.png'
 function assignmentCard({imagePath,text,icon}) {
     return (
         <div>
-            <Card className='rounded-2xl shadow-gray-400 '>
+            <Card className='rounded-2xl shadow-gray-400  shadow-sm'>
                 <Card.Body>
                     <span className='flex justify-between items-center text-md  p-1 cursor-pointer font-semibold text-gray-800'>
 

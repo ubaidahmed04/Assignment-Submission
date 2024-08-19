@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Button } from "react-bootstrap";
+import { Form, Button,FloatingLabel } from "react-bootstrap";
 import './Style.css'
 import { Link,useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
@@ -20,13 +20,16 @@ function SignIn() {
   }
   return (
     <div className="signin-container flex-col gap-3" >
-      <img src={SMITLogo}/>
+      {/* <img src={SMITLogo}/> */}
       <span className="text-gray-600">Teacher Portal</span>
         <div className="content min-w-[300px] sm:w-[500px]  gap-3">
       <Form onSubmit={handleSubmit(onSubmit)}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label className="font-mono">Email address</Form.Label>
-          <Form.Control 
+        <FloatingLabel
+        controlId="floatingInput"
+        label="Email address"
+      >
+         <Form.Control 
            type="email"
            {...register('email', {
              required: 'Email is required',
@@ -36,13 +39,19 @@ function SignIn() {
              }
            })}
            placeholder="Enter email" />
-                   {errors.email && <p className="text-danger pt-1">{errors.email.message}</p>}
+                   {errors.email && <p className="text-danger pt-1">{errors.email.message}</p>} 
 
+      </FloatingLabel>
+        
           
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label className="font-mono">Password</Form.Label>
+
+          <FloatingLabel
+           controlId="floatingInput"
+           label="Password"
+          >
           <Form.Control 
           {...register("password", {
             required: "Password is required",
@@ -54,6 +63,7 @@ function SignIn() {
           })}
            type="password" placeholder="Password" />
             {errors.password && <p className="text-danger pt-1">{errors.password.message}</p>}
+            </FloatingLabel>
         </Form.Group>
         <div className="">
             <div>
