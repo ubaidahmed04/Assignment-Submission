@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 const HomeNavbar = () => {
   return (
     <>
-      <Nav variant="underline" defaultActiveKey="/stream" className="mt-[70px] bg-[#B2B7C2]  p-2 overflow-y-auto" justify>
+      <Nav variant="underline" defaultActiveKey="/stream" className="mt-[78px] bg-[#B2B7C2]  p-2 overflow-y-auto" justify>
         <Nav.Item>
           <NavLink
             to="/stream"

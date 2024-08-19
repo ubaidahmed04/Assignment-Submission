@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card } from 'react-bootstrap';
+import { Card, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import './styles.css';
 import { Link } from 'react-router-dom';
 import bgImg from '../assets/card-bg.jpg';
@@ -16,11 +16,19 @@ function CardUI() {
           <Card.Subtitle className="text-muted bottom-20 absolute  text-black font-bold">Batch 1</Card.Subtitle>
           <span className='flex gap-4 justify-end '>
             
-
-          <FaRegFolder size={20} className='cursor-pointer'/>
-          <Link to={'/stream'}>
+            <FaRegFolder size={20} className='cursor-pointer'/>
+          <OverlayTrigger
+      placement="bottom"
+      delay={{ show: 250, hide: 400 }}
+      overlay={  <Tooltip id="button-tooltip" >
+     Click Here
+    </Tooltip>}
+    >
+      <Link to={'/stream'}>
           <FaArrowTrendUp size={20}/>
           </Link>
+    </OverlayTrigger>
+         
           </span>
         </Card.Body>
       </Card>

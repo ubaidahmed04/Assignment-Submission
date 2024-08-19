@@ -20,9 +20,9 @@ const Classwork = () => {
                  <AssignmentModal showModal={showModal}
                 setShowModal={setShowModal} />
             </div>
-            <div className='flex justify-center py-4 px-8  w-full '>
-                <AccordianCard />
-            </div>
+            <div className="flex justify-center py-4 w-full lg:px-24 xl:px-40">
+        <AccordianCard />
+      </div>
             <div className='flex justify-center self-end  '>
 
                 <span className='border-b-8 mt-[40px]'>
