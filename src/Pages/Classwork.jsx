@@ -8,7 +8,7 @@ import Write from '../assets/write.png'
 import assignment from '../assets/assignment.png'
 import { BsThreeDotsVertical } from "react-icons/bs";
 import AccordianCard from '../components/Accordian';
-
+import './Style.css'
 const Classwork = () => {
     const [showModal, setShowModal] = useState(false);
 

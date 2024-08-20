@@ -20,7 +20,7 @@ function SignIn() {
   }
   return (
     <div className="signin-container flex-col gap-3" >
-      <img src={SMITLogo}/>
+      {/* <img src={SMITLogo}/> */}
       <span className="text-gray-600">Teacher Portal</span>
         <div className="content min-w-[300px] sm:w-[500px]  gap-3">
       <Form onSubmit={handleSubmit(onSubmit)}>

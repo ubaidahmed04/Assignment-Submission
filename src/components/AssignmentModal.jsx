@@ -39,7 +39,7 @@ function ModalForm() {
 
   return (
     <>
-      <Button variant="primary" className='flex items-center gap-2 rounded-xl  p-3' onClick={(handleShow)}>
+      <Button  className='flex items-center btn gap-2 rounded-xl  p-3' onClick={(handleShow)}>
       <FiPlus /> Create
       </Button>
 
